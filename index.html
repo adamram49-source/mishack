@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>מי אתה היום?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>מי אתה היום?</h1>
+        <div id="profile-setup">
+            <input type="text" id="username" placeholder="בחר שם">
+            <select id="color">
+                <option value="red">אדום</option>
+                <option value="blue">כחול</option>
+                <option value="green">ירוק</option>
+            </select>
+            <select id="type">
+                <option value="fast">מהיר</option>
+                <option value="smart">חכם</option>
+                <option value="funny">מצחיק</option>
+            </select>
+            <button id="start-btn">התחל</button>
+        </div>
+
+        <div id="game" style="display:none;">
+            <h2 id="welcome"></h2>
+            <p id="task"></p>
+            <button id="complete-task">סיימתי את המשימה!</button>
+            <p>נקודות: <span id="points">0</span></p>
+            <p id="achievement"></p>
+            <button id="reset-btn">משתמש חדש</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
